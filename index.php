@@ -6,6 +6,14 @@
     <title>PHP Badwords</title>
 </head>
 <body>
-    ciao
+    <div class="container">
+        <label for="textArea">Inserisce una frase</label>
+        <textarea name="" id="textArea" cols="30" rows="10"></textarea>
+    </div>
+
+    <div class="container">
+        <label for="input">Inserisci una parola</label>
+        <input type="text" id="input">
+    </div>
 </body>
 </html>
