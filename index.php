@@ -16,6 +16,8 @@
             <label for="input">Inserisci una parola</label>
             <input type="text" id="input">
         </div>
+
+        <button type="submit">Invio Richiesta</button>
     </form>
 </body>
 </html>
