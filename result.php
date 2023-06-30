@@ -1,6 +1,7 @@
 <?php
     $textArea = $_GET['textArea'];
     $badWord = $_GET['badWord'];
+    $censoredText = str_ireplace($badWord, '[CENSORED]', $textArea);
 ?>
 
 <!DOCTYPE html>
@@ -11,8 +12,16 @@
     <title>Final Result</title>
 </head>
 <body>
+    <h3>Il tuo testo e:</h3>
     <p>
         <?php echo $textArea; ?>
+    </p>
+
+    <hr>
+
+    <h3>Il tuo testo censurato:</h3>
+    <p>
+        <?php echo $censoredText; ?>
     </p>
 </body>
 </html>
