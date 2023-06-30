@@ -1,6 +1,6 @@
 <?php
-
-
+    $textArea = $_GET['textArea'];
+    $badWord = $_GET['badWord']
 ?>
 
 <!DOCTYPE html>
