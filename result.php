@@ -1,6 +1,6 @@
 <?php
     $textArea = $_GET['textArea'];
-    $badWord = $_GET['badWord']
+    $badWord = $_GET['badWord'];
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +11,8 @@
     <title>Final Result</title>
 </head>
 <body>
-    
+    <p>
+        <?php echo $textArea; ?>
+    </p>
 </body>
 </html>
