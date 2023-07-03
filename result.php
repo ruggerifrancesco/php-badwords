@@ -2,6 +2,8 @@
     $textArea = $_GET['textArea'];
     $badWord = $_GET['badWord'];
     $censoredText = str_ireplace($badWord, '***', $textArea);
+    $originalLength = strlen($textArea);
+    $censoredLength = strlen($censoredText);
 ?>
 
 <!DOCTYPE html>
@@ -16,6 +18,7 @@
     <p>
         <?php echo $textArea; ?>
     </p>
+    <span>Lunghezza: <?php echo $originalLength; ?></span>
 
     <hr>
 
@@ -23,5 +26,6 @@
     <p>
         <?php echo $censoredText; ?>
     </p>
+    <span>Lunghezza: <?php echo $censoredLength; ?></span>
 </body>
 </html>
